@@ -16,7 +16,6 @@ from tqdm import tqdm
 tokens_filename = "../data/tokens_list_10k.csv"
 filename_train = "../data/reviews_train.csv"
 filename_validation = "../data/reviews_validation.csv"
-filename_test = "../data/reviews_test.csv"
 model_save_path = "../model/rnn_sentiment_model.pth"
 
 # Initialize pytorch device and tokenizer
@@ -96,7 +95,7 @@ if __name__ == "__main__":
         """
         # Do forward pass
         output = model(X)
-        predictions = torch.round(output)
+        predictions = torch.round(torch.sigmoid(output))
         # Calculate loss
         loss = criterion(output, Y)
         # Reset gradients and do backward propagation
@@ -145,7 +144,7 @@ if __name__ == "__main__":
                                         data_validation.loc[c_slice, "voted_up"])
                 # Do forward pass
                 output = model(X)
-                predictions = torch.round(output)
+                predictions = torch.round(torch.sigmoid(output))
                 # Calculate loss and accuracy
                 sum_loss += criterion(output, Y)
                 sum_acc += accuracy_fn(y_true=Y, y_pred=predictions)
