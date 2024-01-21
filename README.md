@@ -2,9 +2,11 @@
 
 This project implements a machine learning model for predicting sentiment (voted up/down) from steam reviews text.
 
-**notebooks** folder contains Jupyter Notebook files that are used for data exploration and wrangling, and experimentation with model generation.
-
 **data** folder contains the data and word dictionary used in the model training.
+
+**model** folder contains the trained weights of the RNN model.
+
+**notebooks** folder contains Jupyter Notebook files that are used for data exploration and wrangling, and experimentation with model generation.
 
 **scripts** folder contains Python scripts for processing data, generating dictionary, and training the model.
 
@@ -27,9 +29,23 @@ The model is implemented as a Recurrent Neural Network (RNN) with pytorch and to
 
 ![image](assets/training.png)
 
-5. Execute scripr **testing.py**, this runs inference on the model with testing data and displays accuracy.
+5. Execute script **testing.py**, this runs inference on the model with testing data and displays accuracy.
 
 ![image](assets/testing.png)
+
+## Model usage
+
+The model can be tested with running the script **inference.py** in **scripts** folder.
+
+![image](assets/inference.png)
+
+## Todo
+
+Further assess model performance with confusion matrix and other metrics.
+
+Implement API for using the model and deploy model for public access.
+
+Create a website that uses the API to show outputs from the model.
 
 ## Acknowledgements and resources
 
