@@ -24,6 +24,9 @@ The model is implemented as a Recurrent Neural Network, which processes the revi
 2. Execute script **build_dataset.py** in **scripts** folder, this generates filtered and splitted datasets in the **data** folder.
 3. Execute script **build_dictionary.py**, this generates files of most used tokens in the reviews in the **data** folder.
 4. Execute script **train_rnn_model.py**, this trains the model and saves model weights to a file.
+
+![image](assets/training.png)
+
 5. Execute scripr **testing.py**, this runs inference on the model with testing data and displays accuracy.
 
 ![image](assets/testing.png)
