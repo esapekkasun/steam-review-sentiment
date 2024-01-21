@@ -30,3 +30,11 @@ The model is implemented as a Recurrent Neural Network, which processes the revi
 5. Execute scripr **testing.py**, this runs inference on the model with testing data and displays accuracy.
 
 ![image](assets/testing.png)
+
+## Acknowledgements and resources
+
+<a href="https://www.learnpytorch.io">Learn PyTorch for Deep Learning</a>
+
+<a href="https://coderzcolumn.com">CoderzColumn</a>
+
+<a href="http://www.freepik.com"> Preview picture designed by vectorjuice / Freepik</a>
