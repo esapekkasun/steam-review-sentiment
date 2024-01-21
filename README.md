@@ -37,4 +37,4 @@ The model is implemented as a Recurrent Neural Network (RNN) with pytorch and to
 
 <a href="https://coderzcolumn.com">CoderzColumn</a>
 
-<a href="http://www.freepik.com"> Preview picture designed by vectorjuice / Freepik</a>
+<a href="http://www.freepik.com">Preview picture designed by vectorjuice / Freepik</a>
