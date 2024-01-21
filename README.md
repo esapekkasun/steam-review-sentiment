@@ -12,11 +12,11 @@ This project implements a machine learning model for predicting sentiment (voted
 
 The data is downloaded from https://www.kaggle.com/datasets/kieranpoc/steam-reviews, and not provided in this repository. If you want to try to run the code in this repository, you need to download the data and extract it in the **data** folder.
 
-It contains more than 100 million steam reviews. The dataset contains texts in many languages, but only english language reviews are used in the model.
+The dataset contains more than 100 million steam reviews. It contains texts in many languages, but only english language reviews are used in the model.
 
 ## Model description
 
-The model is implemented as a Recurrent Neural Network, which processes the review texts token by token (word by word).
+The model is implemented as a Recurrent Neural Network (RNN) with pytorch and torchtext libraries. The RNN processes the review texts token by token (word by word) and outputs a single value for classifying the text sentiment (voted up/down).
 
 ## Data processing and model generation
 
