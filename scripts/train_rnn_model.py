@@ -137,7 +137,6 @@ if __name__ == "__main__":
         sum_acc = 0
         n_chunks = 0
         with torch.inference_mode():
-            current_loss = 0
             for c_start in tqdm(range(0, len(data_validation), batch_size)):
                 c_slice = slice(c_start, c_start + batch_size)
                 X, Y = batch_to_tensors(data_validation.loc[c_slice, "review"],
