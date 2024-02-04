@@ -13,7 +13,7 @@ app = FastAPI()
 # Implement GET response
 @app.get("/")
 def read_root():
-    return {"Hello": "World"}
+    return {"message": "post text to /review"}
 
 # Implement POST response
 @app.post("/review")
