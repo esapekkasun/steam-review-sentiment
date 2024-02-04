@@ -46,17 +46,23 @@ With Anaconda, the used packages can be installed by running ```conda create -n 
 
 ![image](assets/testing.png)
 
-## Model usage
+## Model testing
 
 The model can be tested with running the script **inference.py** in **scripts** folder.
 
 ![image](assets/inference.png)
 
+## Inference API deployment
+
+The inference API can be tested by running ```uvicorn main:app --reload``` in the **scripts** folder. The API can then be accessed on [localhost](http://127.0.0.1:8000).
+
+The API provides a HTTP POST method at **/review** path, which can be used for sending text and getting the sentiment as a reply. This can be tested with [FastAPI](http://127.0.0.1:8000/docs).
+
 ## Todo
 
 Further assess model performance with confusion matrix and other metrics.
 
-Implement API for using the model and deploy model for public access.
+Containerize API and deploy model for public access.
 
 Create a website that uses the API to show outputs from the model.
 
