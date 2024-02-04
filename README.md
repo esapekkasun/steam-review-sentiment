@@ -20,6 +20,19 @@ The dataset contains more than 100 million steam reviews. It contains texts in m
 
 The model is implemented as a Recurrent Neural Network (RNN) with pytorch and torchtext libraries. The RNN processes the review texts token by token (word by word) and outputs a single value for classifying the text sentiment (voted up/down).
 
+## Dependencies
+
+The model is generated with PyTorch and uses FastAPI and Uvicorn for deployment. Use following python libraries with minimum versions:
+
+- pytorch:2.1.2
+- torchtext:0.16.2
+- pandas:2.1.4
+- tqdm:4.65.0
+- fastapi:0.103.0
+- uvicorn:0.20.0
+
+With Anaconda, the used packages can be installed by running ```conda create -n <environment-name> --file req.txt```.
+
 ## Data processing and model generation
 
 1. Download data and extract to **data** folder.
