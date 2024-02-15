@@ -12,14 +12,14 @@ from tqdm import tqdm
 from sklearn.model_selection import train_test_split
 
 # Define variables
-filename = "../data/all_reviews/all_reviews.csv"
-filename_output = "../data/all_reviews/all_reviews_english_balanced.csv"
+filename = "data/all_reviews/all_reviews.csv"
+filename_output = "data/all_reviews/all_reviews_english_balanced.csv"
 chunksize = 10 ** 4
 data_size = 113883717
 random_state = 11
-filename_train = "../data/reviews_train.csv"
-filename_validation = "../data/reviews_validation.csv"
-filename_test = "../data/reviews_test.csv"
+filename_train = "data/reviews_train.csv"
+filename_validation = "data/reviews_validation.csv"
+filename_test = "data/reviews_test.csv"
 
 def process_data():
     """

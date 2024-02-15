@@ -13,10 +13,10 @@ from collections import OrderedDict
 from tqdm import tqdm
 
 # Define variables
-tokens_filename = "../data/tokens_list_10k.csv"
-filename_train = "../data/reviews_train.csv"
-filename_validation = "../data/reviews_validation.csv"
-model_save_path = "../model/rnn_sentiment_model.pth"
+tokens_filename = "data/tokens_list_10k.csv"
+filename_train = "data/reviews_train.csv"
+filename_validation = "data/reviews_validation.csv"
+model_save_path = "model/rnn_sentiment_model.pth"
 
 # Initialize pytorch device and tokenizer
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')

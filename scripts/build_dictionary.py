@@ -9,10 +9,10 @@ from tqdm import tqdm
 from torchtext.data import get_tokenizer
 
 # Define variables
-filename = "../data/all_reviews/all_reviews_english_balanced.csv"
+filename = "data/all_reviews/all_reviews_english_balanced.csv"
 chunksize = 10 ** 4
-filename_1k = "../data/tokens_list_1k.csv"
-filename_10k = "../data/tokens_list_10k.csv"
+filename_1k = "data/tokens_list_1k.csv"
+filename_10k = "data/tokens_list_10k.csv"
 
 def append_with_frequency(dict, tokens):
     for t in tokens:
