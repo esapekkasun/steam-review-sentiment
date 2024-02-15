@@ -1,0 +1,6 @@
+torch == 2.1.2
+torchtext == 0.16.2
+pandas == 2.1.4
+tqdm == 4.65.0
+fastapi == 0.103.0
+uvicorn == 0.20.0
