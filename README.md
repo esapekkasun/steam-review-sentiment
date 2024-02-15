@@ -4,11 +4,9 @@ This project implements a machine learning model for predicting sentiment (voted
 
 **data** folder contains the data and word dictionary used in the model training.
 
-**model** folder contains the trained weights of the RNN model.
+**model** folder contains the Python scripts for processing data, generating dictionary, and training the model. It also contains the trained weights of the RNN model.
 
 **notebooks** folder contains Jupyter Notebook files that are used for data exploration and wrangling, and experimentation with model generation.
-
-**scripts** folder contains Python scripts for processing data, generating dictionary, and training the model.
 
 ## Data description
 
@@ -38,19 +36,19 @@ With Anaconda, the used packages can be installed with ```conda create -n <envir
 ## Data processing and model generation
 
 1. Download data and extract to **data** folder.
-2. Execute script **scripts/build_dataset.py**, this generates filtered and splitted datasets in the **data** folder.
-3. Execute script **scripts/build_dictionary.py**, this generates files of most used tokens in the reviews in the **data** folder.
-4. Execute script **scripts/train_rnn_model.py**, this trains the model and saves model weights to a file.
+2. Execute script **model/build_dataset.py**, this generates filtered and splitted datasets in the **data** folder.
+3. Execute script **model/build_dictionary.py**, this generates files of most used tokens in the reviews in the **data** folder.
+4. Execute script **model/training.py**, this trains the model and saves model weights to a file.
 
 ![image](assets/training.png)
 
-5. Execute script **scripts/testing.py**, this runs inference on the model with testing data and displays accuracy.
+5. Execute script **model/testing.py**, this runs inference on the model with testing data and displays accuracy.
 
 ![image](assets/testing.png)
 
 ## Model testing
 
-The model can be tested with running the script **scripts/inference.py**.
+The model can be tested with running the script **model/inference.py**.
 
 ![image](assets/inference.png)
 
