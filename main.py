@@ -5,7 +5,7 @@ This script runs the model API
 """
 
 from fastapi import FastAPI
-from scripts.inference import model_pipeline
+from model.inference import model_pipeline
 
 # Initialise app
 app = FastAPI()
