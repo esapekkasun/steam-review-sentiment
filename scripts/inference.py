@@ -5,9 +5,9 @@ This script is used for testing the model inference manually
 """
 
 import torch
-from scripts.train_rnn_model import RNN, batch_to_tensors, \
-                            embedding_size, hidden_size, num_layers, \
-                            device, model_save_path
+from .training import RNN, batch_to_tensors, \
+                      embedding_size, hidden_size, num_layers, \
+                      device, model_save_path
 
 # Define variables
 filename_test = "data/reviews_test.csv"

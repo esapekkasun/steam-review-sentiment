@@ -8,9 +8,9 @@ import pandas as pd
 import torch
 from torch import nn
 from tqdm import tqdm
-from scripts.train_rnn_model import RNN, batch_to_tensors, accuracy_fn,\
-                            embedding_size, hidden_size, num_layers, \
-                            device, batch_size, model_save_path
+from .training import RNN, batch_to_tensors, accuracy_fn,\
+                      embedding_size, hidden_size, num_layers, \
+                      device, batch_size, model_save_path
 
 # Define variables
 filename_test = "data/reviews_test.csv"
