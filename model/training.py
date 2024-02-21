@@ -156,4 +156,4 @@ if __name__ == "__main__":
 
     # Save the model state dict
     print(f"Saving model to: {model_save_path}")
-    torch.save(obj=model.state_dict(), f=model_save_path)
+    torch.save(obj=model.to("cpu").state_dict(), f=model_save_path)
