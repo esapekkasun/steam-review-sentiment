@@ -1,3 +1,4 @@
 data/all_reviews
 data/weighted_score_above_08.csv
 notebooks/.ipynb_checkpoints
+**/__pycache__
