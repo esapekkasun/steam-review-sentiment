@@ -62,7 +62,7 @@ The API provides a HTTP POST method at **/review** path, which can be used for s
 
 Build Docker image and start inference API by running `docker compose up --build`.
 
-The API will again be available on [localhost](http://127.0.0.1:8000).
+The API will again be available on http://127.0.0.1:8000.
 
 ### Testing inference API on AWS server
 
