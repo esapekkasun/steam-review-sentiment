@@ -54,9 +54,9 @@ The model can be tested with running the script **model/inference.py**.
 
 ## Inference API
 
-The inference API can be tested by running ```uvicorn main:app --reload```. The API can then be accessed on [localhost](http://127.0.0.1:8000).
+Locally the inference API can be tested by running ```uvicorn main:app --reload```. The API can then be accessed at http://127.0.0.1:8000.
 
-The API provides a HTTP POST method at **/review** path, which can be used for sending text and getting the sentiment as a reply. This can be tested with [FastAPI](http://127.0.0.1:8000/docs).
+The API provides a HTTP POST method at **/review** path, which can be used for sending text and getting the sentiment as a reply. This can be tested with FastAPI at http://127.0.0.1:8000/docs.
 
 ### Building and running inference API with Docker
 
@@ -64,11 +64,13 @@ Build Docker image and start inference API by running `docker compose up --build
 
 The API will again be available on [localhost](http://127.0.0.1:8000).
 
+### Testing inference API on AWS server
+
+If you wish to test test the API without a local setup, you can access the API running in an AWS server at http://51.20.4.22:80/docs.
+
 ## Todo
 
 Further assess model performance with confusion matrix and other metrics.
-
-Deploy model for public access.
 
 Create a website that uses the API to show outputs from the model.
 
