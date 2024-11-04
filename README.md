@@ -60,13 +60,13 @@ The API provides a HTTP POST method at **/review** path, which can be used for s
 
 ### Building and running inference API with Docker
 
-Build Docker image and start inference API by running `docker compose up --build`.
+Build Docker image and start inference API by running `docker-compose up --build`.
 
 The API will again be available on http://127.0.0.1:8000.
 
-### Testing inference API on AWS server
+### Inference API on AWS server
 
-If you wish to test test the API without a local setup, you can access the API running in an AWS server at http://51.20.4.22:80/docs.
+I also configured an AWS server to run the inference API, and you can test and use it without a local setup there. The API can be found at http://ec2-13-60-44-243.eu-north-1.compute.amazonaws.com/docs.
 
 ## Todo
 
